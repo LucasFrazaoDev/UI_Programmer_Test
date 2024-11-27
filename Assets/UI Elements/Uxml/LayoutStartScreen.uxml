@@ -1,0 +1,51 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="LoadingScreenMenu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.82); background-image: url(&quot;project://database/Assets/Images/LoadingScreenBG.jpg?fileID=2800000&amp;guid=ebd8b16877da60f438f8fd7e1bb835a1&amp;type=3#LoadingScreenBG&quot;);" />
+    <ui:VisualElement name="MainScreenContainer" enabled="true" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/MainScreenBG.png?fileID=2800000&amp;guid=73328ce6f4085de4191dd2610f634058&amp;type=3#MainScreenBG&quot;); display: none; visibility: visible; overflow: visible;">
+        <ui:VisualElement name="TopContainer" style="flex-grow: 1; flex-basis: 80%; align-items: center; justify-content: flex-end;">
+            <ui:Button text="Click to Start" name="StartGameButton" style="font-size: 58px; background-color: rgba(188, 188, 188, 0); color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=81a00e4010534e94b95bc4cb1da0a225&amp;type=3#NotInter-Regular&quot;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomContainer" style="flex-grow: 1; flex-basis: 20%; flex-direction: row; justify-content: space-around;">
+            <ui:VisualElement name="LeftLogo" style="flex-grow: 0; flex-basis: 20%; background-color: rgb(0, 0, 0);" />
+            <ui:VisualElement name="RightLogo" style="flex-grow: 0; flex-basis: 20%; background-color: rgb(166, 166, 166);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="LoginScreenContainer" style="flex-grow: 1; visibility: visible; display: none; background-color: rgba(2, 2, 2, 0.91); flex-basis: 100%; flex-direction: row;">
+        <ui:VisualElement name="LeftContainer" style="flex-grow: 1; background-color: rgb(0, 0, 0); flex-basis: 45%; align-items: center; justify-content: space-around;">
+            <ui:VisualElement name="NFTWallets" style="flex-grow: 0; flex-basis: auto; background-color: rgba(255, 185, 6, 0.91); width: 50%; height: 25%; align-items: center;">
+                <ui:Label text="CONNECT YOUR WALLET" style="-unity-font-style: bold; -unity-text-align: middle-center; background-size: 10% 15%;" />
+                <ui:VisualElement name="Buttons" style="flex-grow: 1; flex-direction: row; justify-content: center; align-items: center; flex-basis: auto; width: 80%; height: 75%;">
+                    <ui:VisualElement style="flex-grow: 0; width: 30%;">
+                        <ui:Button name="MetamaskButton" style="background-image: url(&quot;project://database/Assets/Images/MetamaskLogo.jpg?fileID=2800000&amp;guid=4b9c69dc468cc39429791b4d95cba7b4&amp;type=3#MetamaskLogo&quot;); width: 30%; height: 50%; align-items: center; justify-content: flex-end; flex-basis: 75%;" />
+                        <ui:Label text="Label" style="position: relative; bottom: auto; flex-basis: 25%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 0; width: 30%;">
+                        <ui:Button name="MetamaskButton" style="background-image: url(&quot;project://database/Assets/Images/MetamaskLogo.jpg?fileID=2800000&amp;guid=4b9c69dc468cc39429791b4d95cba7b4&amp;type=3#MetamaskLogo&quot;); width: 30%; height: 50%; align-items: center; justify-content: flex-end; flex-basis: 75%;" />
+                        <ui:Label text="Label" style="position: relative; bottom: auto; flex-basis: 25%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 0; width: 30%;">
+                        <ui:Button name="MetamaskButton" style="background-image: url(&quot;project://database/Assets/Images/MetamaskLogo.jpg?fileID=2800000&amp;guid=4b9c69dc468cc39429791b4d95cba7b4&amp;type=3#MetamaskLogo&quot;); width: 30%; height: 50%; align-items: center; justify-content: flex-end; flex-basis: 75%;" />
+                        <ui:Label text="Label" style="position: relative; bottom: auto; flex-basis: 25%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Labels" style="flex-grow: 1; flex-direction: row; justify-content: center; align-items: center; flex-basis: auto; width: 80%; height: 10%;">
+                    <ui:Label text="Label" />
+                    <ui:Label text="Label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="SocialMedias" style="flex-grow: 0; background-color: rgba(255, 8, 206, 0.96); flex-basis: auto; width: 50%; height: 25%;">
+                <ui:Label text="--------- Or social Login --------- " style="-unity-text-align: upper-center;" />
+                <ui:VisualElement name="Buttons" style="flex-grow: 1; flex-direction: row; justify-content: center; align-items: center; flex-basis: auto; width: 100%; height: 75%;">
+                    <ui:Button name="MetamaskButton" style="background-image: url(&quot;project://database/Assets/Images/MetamaskLogo.jpg?fileID=2800000&amp;guid=4b9c69dc468cc39429791b4d95cba7b4&amp;type=3#MetamaskLogo&quot;); width: 20%; height: 30%;" />
+                    <ui:Button name="Walletconncet" style="background-image: url(&quot;project://database/Assets/Images/MetamaskLogo.jpg?fileID=2800000&amp;guid=4b9c69dc468cc39429791b4d95cba7b4&amp;type=3#MetamaskLogo&quot;); width: 20%; height: 30%;" />
+                    <ui:Button name="Connect" style="background-image: url(&quot;project://database/Assets/Images/MetamaskLogo.jpg?fileID=2800000&amp;guid=4b9c69dc468cc39429791b4d95cba7b4&amp;type=3#MetamaskLogo&quot;); width: 20%; height: 30%;" />
+                    <ui:Button name="Connect" style="background-image: url(&quot;project://database/Assets/Images/MetamaskLogo.jpg?fileID=2800000&amp;guid=4b9c69dc468cc39429791b4d95cba7b4&amp;type=3#MetamaskLogo&quot;); width: 20%; height: 30%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="GuestLogin" style="flex-grow: 0; flex-basis: auto; width: 50%; background-color: rgb(4, 250, 179); height: 25%; justify-content: flex-start; align-items: center;">
+                <ui:Label text="--------- Or guest Login --------- " style="-unity-text-align: upper-center; height: 20%; font-size: 24px;" />
+                <ui:Button text="Continue as Guest" name="GuestButton" style="border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); background-color: rgba(188, 188, 188, 0); font-size: 32px; width: 80%; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightContainer" style="flex-grow: 1; flex-basis: 55%; background-color: rgba(111, 1, 1, 0.76); background-image: url(&quot;project://database/Assets/Images/MainScreenBG.png?fileID=2800000&amp;guid=73328ce6f4085de4191dd2610f634058&amp;type=3#MainScreenBG&quot;);" />
+    </ui:VisualElement>
+</ui:UXML>
