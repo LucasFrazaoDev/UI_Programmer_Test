@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="LoadingScreenMenu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.76); background-image: url(&quot;project://database/Assets/Images/Loading_SCREEN.png?fileID=2800000&amp;guid=b72ff76c93cbce2418b116320aee49ed&amp;type=3#Loading_SCREEN&quot;); justify-content: space-between; align-items: center; -unity-background-image-tint-color: rgba(255, 255, 255, 0.79);">
+    <ui:VisualElement name="LoadingScreenMenu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.76); background-image: url(&quot;project://database/Assets/Images/Loading_SCREEN.png?fileID=2800000&amp;guid=b72ff76c93cbce2418b116320aee49ed&amp;type=3#Loading_SCREEN&quot;); justify-content: space-between; align-items: center; -unity-background-image-tint-color: rgba(255, 255, 255, 0.79); visibility: visible; display: none;">
         <ui:VisualElement name="GameLogo" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Images/GameLogo.png?fileID=2800000&amp;guid=674f8812bef957b46b6151bf3c712e76&amp;type=3#GameLogo&quot;); width: 50%; height: 50%;" />
         <ui:VisualElement name="BarProgress" style="flex-grow: 0; align-items: center; justify-content: center; width: 50%; height: 30%; top: 20%;">
             <ui:ProgressBar value="0" style="width: 60%; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 10px; border-right-width: 10px; border-bottom-width: 10px; border-left-width: 10px; border-top-left-radius: 16px; border-top-right-radius: 16px; border-bottom-right-radius: 16px; border-bottom-left-radius: 16px; background-color: rgba(0, 0, 0, 0);" />
@@ -19,7 +19,7 @@
             <ui:VisualElement name="RightLogo" style="flex-grow: 0; flex-basis: 20%; background-color: rgb(166, 166, 166);" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="LoginScreenContainer" style="flex-grow: 1; visibility: visible; display: none; background-color: rgba(2, 2, 2, 0.91); flex-basis: 100%; flex-direction: row;">
+    <ui:VisualElement name="LoginScreenContainer" style="flex-grow: 1; visibility: visible; display: flex; background-color: rgba(2, 2, 2, 0.91); flex-basis: 100%; flex-direction: row;">
         <ui:VisualElement name="LeftContainer" style="flex-grow: 1; background-color: rgb(0, 0, 0); flex-basis: 45%; align-items: center; justify-content: space-around;">
             <ui:VisualElement name="NFTWallets" style="flex-grow: 0; flex-basis: auto; background-color: rgba(255, 185, 6, 0.91); width: 50%; height: 25%; align-items: center;">
                 <ui:Label text="CONNECT YOUR WALLET" style="-unity-font-style: bold; -unity-text-align: middle-center; background-size: 10% 15%;" />

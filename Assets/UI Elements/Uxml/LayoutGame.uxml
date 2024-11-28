@@ -3,7 +3,11 @@
     <engine:Template name="CreateRoomButton" src="project://database/Assets/UI%20Elements/Uxml/Templates/CreateRoomButton.uxml?fileID=9197481963319205126&amp;guid=172dcf577745f8f4d840afe984a3158d&amp;type=3#CreateRoomButton" />
     <engine:VisualElement name="MainContainer" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/BG.png?fileID=2800000&amp;guid=a45fb48e8898b8544a3ae5cddff7fec9&amp;type=3#BG&quot;);">
         <engine:VisualElement name="NavContainer" style="flex-grow: 1; height: 5%; background-color: rgba(0, 204, 255, 0); border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; border-top-width: 0; border-right-width: 0; border-bottom-width: 10px; border-left-width: 0; border-left-color: rgba(0, 14, 106, 0.81); border-right-color: rgba(0, 14, 106, 0.81); border-top-color: rgba(0, 14, 106, 0.81); border-bottom-color: rgba(0, 14, 106, 0.81); flex-direction: row; background-image: url(&quot;project://database/Assets/Images/Rectangle%202.png?fileID=2800000&amp;guid=09d3bb9bbe1cf0345bc324ffcd2e7b88&amp;type=3#Rectangle 2&quot;); position: relative;">
-            <engine:VisualElement name="LeftContainer" style="flex-grow: 1; width: 60%;" />
+            <engine:VisualElement name="LeftContainer" style="flex-grow: 1; width: 60%; flex-direction: row; justify-content: flex-end; align-items: center; margin-right: 25%;">
+                <engine:VisualElement name="ProfileSection" style="flex-grow: 1; width: 40%; height: 90%; background-color: rgb(0, 0, 0); border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; margin-left: 15%;" />
+                <engine:VisualElement name="HournalSection" style="flex-grow: 1; width: 20%; height: 90%; background-color: rgba(250, 25, 190, 0.86);" />
+                <engine:VisualElement name="MedalsSection" style="flex-grow: 1; width: 20%; background-color: rgba(159, 245, 10, 0.95); height: 90%;" />
+            </engine:VisualElement>
             <engine:VisualElement name="RightContainer" style="flex-grow: 1; flex-direction: row; justify-content: flex-end; width: 40%;">
                 <engine:VisualElement name="Tickets" style="flex-grow: 1; -unity-text-align: upper-left; align-items: center; justify-content: center; height: 100%;">
                     <engine:Label text="30" style="font-size: 48px; -unity-text-align: middle-center; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; width: 60%; flex-direction: row; height: 45%;">
@@ -39,11 +43,11 @@
                     </engine:Button>
                 </engine:VisualElement>
                 <engine:VisualElement name="BottomProgress" style="flex-grow: 1; height: 30%; width: 80%; align-items: center;">
-                    <engine:VisualElement name="SeasonPassContainer" style="flex-grow: 1; background-color: rgb(0, 0, 0); width: 50%; height: 35%; flex-direction: row;">
+                    <engine:VisualElement name="SeasonPassContainer" style="flex-grow: 1; background-color: rgb(41, 41, 41); width: 50%; height: 35%; flex-direction: row; border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px;">
                         <engine:VisualElement name="HourGlassIcon" style="flex-grow: 1; width: 30%; background-image: url(&quot;project://database/Assets/Images/GoldenCoin.png?fileID=2800000&amp;guid=16a849c4ddf113c45bae842313f054c3&amp;type=3#GoldenCoin&quot;);" />
                         <engine:Label text="Season end in&#10;20d 8h 9min" name="TimeRemaingingLabel" style="font-size: 36px; color: rgb(255, 255, 255); width: 70%;" />
                     </engine:VisualElement>
-                    <engine:VisualElement name="ProgressBoard" style="flex-grow: 1; background-color: rgba(137, 221, 26, 0.91); width: 70%; height: 65%;">
+                    <engine:VisualElement name="ProgressBoard" style="flex-grow: 1; background-color: rgba(131, 255, 0, 0.69); width: 70%; height: 65%; border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-left-radius: 35px; border-top-right-radius: 35px; border-bottom-right-radius: 35px; border-bottom-left-radius: 35px;">
                         <engine:VisualElement style="flex-grow: 1; flex-direction: row; background-size: 100% 45%;">
                             <engine:VisualElement name="StarIcon" style="flex-grow: 1; width: 30%; background-image: url(&quot;project://database/Assets/Images/Star.png?fileID=2800000&amp;guid=7bb8a150f7df79c4588d61ec23951cd7&amp;type=3#Star&quot;);" />
                             <engine:Label text="BATTLE PASS" name="BattlePassLabel" style="width: 70%; -unity-text-align: middle-center; font-size: 48px;" />
@@ -53,7 +57,7 @@
                                 <engine:Label text="PROGRESSION" name="ProgressionLabel" style="font-size: 24px;" />
                                 <engine:Label text="12/25" name="IntProgressionLabel" style="font-size: 24px;" />
                             </engine:VisualElement>
-                            <engine:SliderInt label="SliderInt" value="42" high-value="100" />
+                            <engine:SliderInt value="15" high-value="25" fill="true" />
                         </engine:VisualElement>
                     </engine:VisualElement>
                 </engine:VisualElement>
