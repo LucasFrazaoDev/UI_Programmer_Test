@@ -1,5 +1,15 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="LoadingScreenMenu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.82); background-image: url(&quot;project://database/Assets/Images/LoadingScreenBG.jpg?fileID=2800000&amp;guid=ebd8b16877da60f438f8fd7e1bb835a1&amp;type=3#LoadingScreenBG&quot;);" />
+    <ui:VisualElement name="LoadingScreenMenu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.76); background-image: url(&quot;project://database/Assets/Images/Loading_SCREEN.png?fileID=2800000&amp;guid=b72ff76c93cbce2418b116320aee49ed&amp;type=3#Loading_SCREEN&quot;); justify-content: space-between; align-items: center; -unity-background-image-tint-color: rgba(255, 255, 255, 0.79);">
+        <ui:VisualElement name="GameLogo" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Images/GameLogo.png?fileID=2800000&amp;guid=674f8812bef957b46b6151bf3c712e76&amp;type=3#GameLogo&quot;); width: 50%; height: 50%;" />
+        <ui:VisualElement name="BarProgress" style="flex-grow: 0; align-items: center; justify-content: center; width: 50%; height: 30%; top: 20%;">
+            <ui:ProgressBar value="0" style="width: 60%; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 10px; border-right-width: 10px; border-bottom-width: 10px; border-left-width: 10px; border-top-left-radius: 16px; border-top-right-radius: 16px; border-bottom-right-radius: 16px; border-bottom-left-radius: 16px; background-color: rgba(0, 0, 0, 0);" />
+            <ui:Label text="LOADING..." style="color: rgb(255, 255, 255); font-size: 48px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomLogos" style="flex-grow: 0; width: 75%; flex-direction: row; justify-content: space-around; height: 20%;">
+            <ui:VisualElement name="Logo" style="flex-grow: 0; width: 25%; background-color: rgba(0, 0, 0, 0.87);" />
+            <ui:VisualElement name="Logo" style="flex-grow: 0; width: 25%; background-color: rgba(0, 0, 0, 0.87);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
     <ui:VisualElement name="MainScreenContainer" enabled="true" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/MainScreenBG.png?fileID=2800000&amp;guid=73328ce6f4085de4191dd2610f634058&amp;type=3#MainScreenBG&quot;); display: none; visibility: visible; overflow: visible;">
         <ui:VisualElement name="TopContainer" style="flex-grow: 1; flex-basis: 80%; align-items: center; justify-content: flex-end;">
             <ui:Button text="Click to Start" name="StartGameButton" style="font-size: 58px; background-color: rgba(188, 188, 188, 0); color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=81a00e4010534e94b95bc4cb1da0a225&amp;type=3#NotInter-Regular&quot;);" />
