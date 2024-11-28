@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement template="GarageButton">
+        <engine:Button name="GarageButton" style="background-image: none; background-color: rgba(0, 0, 0, 0.8); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; width: 292px; height: 104px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 26px; border-top-right-radius: 26px; border-bottom-right-radius: 26px; border-bottom-left-radius: 26px; flex-direction: row;">
+            <engine:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/GoldenCoin.png?fileID=2800000&amp;guid=16a849c4ddf113c45bae842313f054c3&amp;type=3#GoldenCoin&quot;); width: 30%;" />
+            <engine:Label text="CREATE&#10;ROOM" style="color: rgb(255, 255, 255); font-size: 32px; width: 70%;" />
+        </engine:Button>
+    </engine:VisualElement>
+</engine:UXML>
