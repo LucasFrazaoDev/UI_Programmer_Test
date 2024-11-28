@@ -38,7 +38,13 @@
                 </engine:VisualElement>
                 <engine:VisualElement style="flex-grow: 1;" />
             </engine:VisualElement>
-            <engine:VisualElement name="RightContainer" style="flex-grow: 1; width: 50%;" />
+            <engine:VisualElement name="RightContainer" style="flex-grow: 1; width: 50%; align-items: center; justify-content: center;">
+                <engine:VisualElement name="TopButtons" style="flex-grow: 1; width: 80%; height: 40%; align-items: center; justify-content: center;">
+                    <engine:Button name="GarageButton" style="background-image: none; background-color: rgba(0, 0, 0, 0.8); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; width: 292px; height: 104px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 26px; border-top-right-radius: 26px; border-bottom-right-radius: 26px; border-bottom-left-radius: 26px;" />
+                    <engine:Button name="CreateRoom" style="background-image: none; background-color: rgba(0, 0, 0, 0.8); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; width: 292px; height: 104px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 26px; border-top-right-radius: 26px; border-bottom-right-radius: 26px; border-bottom-left-radius: 26px;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="BottomButtons" style="flex-grow: 1; width: 80%; height: 60%;" />
+            </engine:VisualElement>
         </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>
